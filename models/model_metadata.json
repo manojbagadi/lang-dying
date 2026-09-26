@@ -1,0 +1,114 @@
+{
+  "champion_model": "HistGradientBoosting",
+  "cv_benchmark": {
+    "Logistic Regression": {
+      "Accuracy": 0.773540808286943,
+      "Balanced Accuracy": 0.7851455519860874,
+      "F1 Macro": 0.7366927473434386,
+      "ROC-AUC": 0.8645717939291486,
+      "PR-AUC": 0.9528586604065883
+    },
+    "Random Forest": {
+      "Accuracy": 0.8425668083127752,
+      "Balanced Accuracy": 0.8290813316844933,
+      "F1 Macro": 0.8036402754147849,
+      "ROC-AUC": 0.9116881773922678,
+      "PR-AUC": 0.9693219273823745
+    },
+    "HistGradientBoosting": {
+      "Accuracy": 0.8422051586737791,
+      "Balanced Accuracy": 0.8327757818475501,
+      "F1 Macro": 0.8042721554338488,
+      "ROC-AUC": 0.9147539377707623,
+      "PR-AUC": 0.9704032622200348
+    },
+    "LightGBM": {
+      "Accuracy": 0.8360971545923046,
+      "Balanced Accuracy": 0.827243570112288,
+      "F1 Macro": 0.7975785976087881,
+      "ROC-AUC": 0.9142736213428586,
+      "PR-AUC": 0.970474368854975
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.8384201077199281,
+    "balanced_accuracy": 0.8464338832970151,
+    "precision": 0.9482288828337875,
+    "recall": 0.8305489260143198,
+    "f1_score": 0.8854961832061069,
+    "roc_auc": 0.9100428902493859,
+    "pr_auc": 0.9701073355582709
+  },
+  "confusion_matrix": [
+    [
+      119,
+      19
+    ],
+    [
+      71,
+      348
+    ]
+  ],
+  "classification_report": {
+    "Safe/Low-Risk": {
+      "precision": 0.6263157894736842,
+      "recall": 0.8623188405797102,
+      "f1-score": 0.725609756097561,
+      "support": 138.0
+    },
+    "Endangered/High-Risk": {
+      "precision": 0.9482288828337875,
+      "recall": 0.8305489260143198,
+      "f1-score": 0.8854961832061069,
+      "support": 419.0
+    },
+    "accuracy": 0.8384201077199281,
+    "macro avg": {
+      "precision": 0.7872723361537358,
+      "recall": 0.8464338832970151,
+      "f1-score": 0.805552969651834,
+      "support": 557.0
+    },
+    "weighted avg": {
+      "precision": 0.8684730356458265,
+      "recall": 0.8384201077199281,
+      "f1-score": 0.8458833879799321,
+      "support": 557.0
+    }
+  },
+  "feature_importances": {
+    "log_speakers_per_country": 25.0,
+    "log_speakers": 24.42,
+    "Longitude": 23.04,
+    "Latitude": 14.98,
+    "abs_latitude": 5.41,
+    "nearby_language_density": 4.26,
+    "macro_region": 1.96,
+    "num_countries": 0.46,
+    "climate_zone": 0.46
+  },
+  "numeric_features": [
+    "log_speakers",
+    "log_speakers_per_country",
+    "num_countries",
+    "Latitude",
+    "Longitude",
+    "abs_latitude",
+    "nearby_language_density"
+  ],
+  "categorical_features": [
+    "macro_region",
+    "climate_zone"
+  ],
+  "feature_names": [
+    "log_speakers",
+    "log_speakers_per_country",
+    "num_countries",
+    "Latitude",
+    "Longitude",
+    "abs_latitude",
+    "nearby_language_density",
+    "macro_region",
+    "climate_zone"
+  ]
+}
